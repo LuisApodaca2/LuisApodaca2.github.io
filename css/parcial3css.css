@@ -6,7 +6,9 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li {
 }
 
 .bloque {
+    float: left;
     height: 220px;
+    width: 650px;
     position: relative;
     border: 1px solid black;
     margin-bottom: 50px;
@@ -14,7 +16,6 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li {
 }
 
 .bloque2 {
-    align-content: flex-end;
     height: 220px;
     border: 1px solid black;
     margin-bottom: 50px;
@@ -48,6 +49,8 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li {
 }
 
 #barra-navegacion {
+    border-top: 3px solid;
+    border-color: #ff8200;
     position: relative;
     z-index: 70;
     background: url(../images/barranavegacion.png);
@@ -104,13 +107,9 @@ nav a{
     position: relative;
 }
 
-#encabezado, #pie {
-    border-color: #ff8200;
-}
 #encabezado {
     background: url(../images/encabezado.png) #fbfbfb;
     height: 110px;
-    border-bottom: 3px solid;
 }
 
 
@@ -122,8 +121,12 @@ body {
     color: #0B0B0B;
 }
 
+ul{
+list-style: none;
+}
 
-#Centro {
+
+#Contenido {
     padding: 5px 10px 0 10px;
     height: 1150px;
 }
@@ -138,6 +141,7 @@ body {
     background: #303030;
     background-image: url(../images/cuadritoschidos.png);
     border-top: 3px solid;
+    border-color: #ff8200;
     line-height: 17px;
 }
 .red-social {
@@ -159,4 +163,93 @@ body {
     display: block;
     color: #878787;
     font-size: 12px;
+}
+
+
+
+
+.encuestas {
+    float: right;
+    padding: 10px;
+    width: 300px;
+    height: 1100px;
+    border-left: 1px solid #ccc;
+    background-color: #fafafa;
+}
+
+.encuestas h1 {
+    font-size: 14px;
+    font-weight: bolder;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin: -10px -10px 10px -10px;
+    line-height: 33px;
+    padding-left: 10px;
+    background: url(../images/masvendidas.png);
+    height: 33px;
+    color: #5b5b5b;
+}
+
+
+.lista-encuestas {
+    margin: -10px -10px 10px -10px;
+}
+
+.lista-encuestas li{
+    overflow: hidden;
+    line-height: 30px;
+    background: #fcfcfc;
+    border-bottom: 1px dotted #ccc;
+}
+
+.lista-encuestas li a{
+    color: #000;
+    font-weight: bold;
+    display: block;
+    padding-left: 30px;
+}
+
+.lista-estrella li a{
+    background: url(../images/estrella.png) 7px 5px no-repeat;
+}
+
+.lista-potentes li a{
+    padding-left: 10px;
+}
+
+.lista-encuestas a {
+    position: relative;
+    z-index: 50;
+}
+
+a {
+text-decoration: none;
+ }
+
+.num-1 {
+    background: url(../images/numeros/uno.png) no-repeat;
+}
+
+.num-2 {
+    background: url(../images/numeros/dos.png) no-repeat;
+}
+
+.num-3 {
+    background: url(../images/numeros/tres.png) no-repeat;
+}
+
+.num-4 {
+    background: url(../images/numeros/cuatro.png) no-repeat;
+}
+
+.num-5 {
+    background: url(../images/numeros/cinco.png) no-repeat;
+}
+
+
+.num-1, .num-2, .num-3, .num-4, .num-5{
+    width: 47px;
+    height: 15px;
+    float: right;
+    margin-top: 7px;
 }
