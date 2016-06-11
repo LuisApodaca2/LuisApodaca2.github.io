@@ -1,5 +1,5 @@
 
-h1,h2,h3,h4,h5,h6,p,figure,ul,li {
+h1,h2,h3,h4,h5,h6,figure,ul,li {
     margin: 0;
     padding: 0;
     
@@ -13,6 +13,12 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li {
     border: 1px solid black;
     margin-bottom: 50px;
     border-radius: 20px;
+    background-color: #f7f7f7;
+}
+
+.bloque a {
+    color: #b92025;
+    text-decoration: none;
 }
 
 .bloque2 {
@@ -24,15 +30,9 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li {
 
 .imagen {
     position: absolute;
-    bottom: -6px;
-}
-
-.imagen.left {
-    left: 10px;
-}
-
-.imagen.right {
-    right: 10px;
+    bottom: 30px;
+    left: 63%;
+    display: block;
 }
 
 .descripcion.left{
@@ -52,7 +52,6 @@ h1,h2,h3,h4,h5,h6,p,figure,ul,li {
     border-top: 3px solid;
     border-color: #ff8200;
     position: relative;
-    z-index: 70;
     background: url(../images/barranavegacion.png);
     height: 40px;
     line-height: 40px;
@@ -137,7 +136,6 @@ list-style: none;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 38px;
     background: #303030;
     background-image: url(../images/cuadritoschidos.png);
     border-top: 3px solid;
@@ -154,6 +152,7 @@ list-style: none;
     padding-left: 6px;
     width: 900px;
     height: 17px;
+    margin: 0;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -175,6 +174,8 @@ list-style: none;
     height: 1100px;
     border-left: 1px solid #ccc;
     background-color: #fafafa;
+    position: relative;
+    bottom: 35px;
 }
 
 .encuestas h1 {
@@ -219,7 +220,6 @@ list-style: none;
 
 .lista-encuestas a {
     position: relative;
-    z-index: 50;
 }
 
 a {
@@ -252,4 +252,71 @@ text-decoration: none;
     height: 15px;
     float: right;
     margin-top: 7px;
+}
+
+.mas-informacion {
+    background: #303030;
+    display: inline-block;
+    padding: 5px !important;
+    box-shadow: 0px 1px 3px darkgray;
+}
+
+.mas-informacion p{
+    color: white;
+    padding: 0 !important;
+    font-variant: small-caps;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.mas-informacion div{
+    padding: 1px 3px;
+    border: 1px solid rgba(255,255,255,.7);
+}
+
+.bloque a div p{
+    text-align: justify;
+    line-height: 0.8em;
+}
+
+.ver-mas {
+    color: white;
+    font-weight: bold;
+}
+
+.parte-izquierda {
+    padding: 5px 5px;
+}
+
+.parte-izquierda, .alejate p{
+    margin-bottom: 10%;
+}
+
+
+#barra-navegacion .buscar {
+    float: right;
+    position: relative;
+    bottom: 40px;
+}
+
+.lupa {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: block;
+    background: url(../images/lupa.png) no-repeat;
+    border: 0;
+    height: 20px;
+}
+
+#busqueda {
+    border-radius: 0;
+    border: 0;
+    height: 40px;
+    line-height: 40px;
+    background: #303030 url(../images/barradebusqueda.png);
+    padding: 0 10px 0 10px;
+    color: #fff;
+    width: 200px;
+    margin: 0;
 }
